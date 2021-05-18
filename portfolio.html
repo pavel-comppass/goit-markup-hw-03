@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="body">
-    <header>
+    <header class="header-section">
       <div class="container header">
         <nav class="nav">
           <a class="logo link" lang="en" href="./index.html">
@@ -36,8 +36,8 @@
             <li><a class="menu-item link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="menu list">
-          <li>
+        <ul class="header-contacts-list list">
+          <li class="header-contacts-item">
             <a class="header-contacts link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
@@ -51,107 +51,137 @@
       </div>
     </header>
     <main>
-      <div class="container projects-container">
-        <ul class="filter list">
-          <li><button class="button" type="button">Все</button></li>
-          <li><button class="button" type="button">Веб-сайты</button></li>
-          <li><button class="button" type="button">Приложения</button></li>
-          <li><button class="button" type="button">Дизайн</button></li>
-          <li><button class="button" type="button">Маркетинг</button></li>
-        </ul>
-        <ul class="projects list">
-          <li class="project-item">
-            <img
-              src="./img/projects/img.jpg"
-              alt="открыта страница на ноутбук"
-              width="370"
-              height="294"
-            />
-            <h2>Технокряк</h2>
-            <p class="description">Веб-сайт</p>
-          </li>
-          <li class="project-item">
-            <img
-              src="./img/projects/img-1.jpg"
-              alt="мальчики дерутся за мяч"
-              width="370"
-              height="294"
-            />
-            <h2>Постер New Orlean vs Golden Star</h2>
-            <p class="description">Дизайн</p>
-          </li>
-          <li class="project-item">
-            <img
-              src="./img/projects/img-2.jpg"
-              alt="логотип ресторана"
-              width="370"
-              height="294"
-            />
-            <h2>Ресторан Seafood</h2>
-            <p class="description">Приложение</p>
-          </li>
-          <li class="project-item">
-            <img
-              src="./img/projects/img-3.jpg"
-              alt="наушники"
-              width="370"
-              height="294"
-            />
-            <h2>Проект Prime</h2>
-            <p class="description">Маркетинг</p>
-          </li>
-          <li class="project-item">
-            <img
-              src="./img/projects/img-4.jpg"
-              alt="две коробки"
-              width="370"
-              height="294"
-            />
-            <h2>Проект Boxes</h2>
-            <p class="description">Приложение</p>
-          </li>
-          <li class="project-item">
-            <img
-              src="./img/projects/img-5.jpg"
-              alt="открыта страница на мониторе"
-              width="370"
-              height="294"
-            />
-            <h2>Inspiration has no Borders</h2>
-            <p class="description">Веб-сайт</p>
-          </li>
-          <li class="project-item">
-            <img
-              src="./img/projects/img-6.jpg"
-              alt="развернутая книга"
-              width="370"
-              height="294"
-            />
-            <h2>Издание Limited Edition</h2>
-            <p class="description">Дизайн</p>
-          </li>
-          <li class="project-item">
-            <img
-              src="./img/projects/img-7.jpg"
-              alt="ярлык на веревке"
-              width="370"
-              height="294"
-            />
-            <h2>Проект LAB</h2>
-            <p class="description">Маркетинг</p>
-          </li>
-          <li class="project-item">
-            <img
-              src="./img/projects/img-8.jpg"
-              alt="к ноутбуку приложены руки"
-              width="370"
-              height="294"
-            />
-            <h2>Growing Business</h2>
-            <p class="description">Приложение</p>
-          </li>
-        </ul>
-      </div>
+      <section class="portfolio">
+        <div class="container">
+          <ul class="filter list">
+            <li class="filter-button">
+              <button class="button" type="button">Все</button>
+            </li>
+            <li class="filter-button">
+              <button class="button" type="button">Веб-сайты</button>
+            </li>
+            <li class="filter-button">
+              <button class="button" type="button">Приложения</button>
+            </li>
+            <li class="filter-button">
+              <button class="button" type="button">Дизайн</button>
+            </li>
+            <li class="filter-button">
+              <button class="button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="projects list">
+            <li class="project-item">
+              <img
+                src="./img/projects/img.jpg"
+                alt="открыта страница на ноутбук"
+                width="370"
+                height="294"
+              />
+              <div class="project-description">
+                <h2 class="project-name">Технокряк</h2>
+                <p class="description">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <img
+                src="./img/projects/img-1.jpg"
+                alt="мальчики дерутся за мяч"
+                width="370"
+                height="294"
+              />
+              <div class="project-description">
+                <h2 class="project-name">Постер New Orlean vs Golden Star</h2>
+                <p class="description">Дизайн</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <img
+                src="./img/projects/img-2.jpg"
+                alt="логотип ресторана"
+                width="370"
+                height="294"
+              />
+              <div class="project-description">
+                <h2 class="project-name">Ресторан Seafood</h2>
+                <p class="description">Приложение</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <img
+                src="./img/projects/img-3.jpg"
+                alt="наушники"
+                width="370"
+                height="294"
+              />
+              <div class="project-description">
+                <h2 class="project-name">Проект Prime</h2>
+                <p class="description">Маркетинг</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <img
+                src="./img/projects/img-4.jpg"
+                alt="две коробки"
+                width="370"
+                height="294"
+              />
+              <div class="project-description">
+                <h2 class="project-name">Проект Boxes</h2>
+                <p class="description">Приложение</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <img
+                src="./img/projects/img-5.jpg"
+                alt="открыта страница на мониторе"
+                width="370"
+                height="294"
+              />
+              <div class="project-description">
+                <h2 class="project-name">Inspiration has no Borders</h2>
+                <p class="description">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <img
+                src="./img/projects/img-6.jpg"
+                alt="развернутая книга"
+                width="370"
+                height="294"
+              />
+              <div class="project-description">
+                <h2 class="project-name">Издание Limited Edition</h2>
+                <p class="description">Дизайн</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <img
+                src="./img/projects/img-7.jpg"
+                alt="ярлык на веревке"
+                width="370"
+                height="294"
+              />
+              <div class="project-description">
+                <h2 class="project-name">Проект LAB</h2>
+                <p class="description">Маркетинг</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <img
+                src="./img/projects/img-8.jpg"
+                alt="к ноутбуку приложены руки"
+                width="370"
+                height="294"
+              />
+              <div class="project-description">
+                <h2 class="project-name">Growing Business</h2>
+                <p class="description">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
